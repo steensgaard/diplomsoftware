@@ -1,0 +1,21 @@
+#app {
+    
+}
+
+#app div {
+    display: flex;
+    flex: 1 1 0;
+}
+
+#app {
+    background-color: red;
+}
+
+#app>div:nth-child(even) {
+    background-color: lightcyan;
+}
+
+#app>div:nth-child(odd) {
+    background-color: lightblue;
+}
+

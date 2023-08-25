@@ -4,28 +4,29 @@ let data = [
     { id: 3, joke: "Chuck Norris threw a grenade that killed 100 people it then exploded" },
     { id: 4, joke: "If you ever do the stupid 'look out!! Chuck Norris is behind you!' joke, he will snap your fucking neck like a chicken bone." }
 ]
-let app = '';
 let jokelist = '';
 let counter = 1;
 
 window.onload = function () {
+    console.log("running");
     app = document.getElementById('app');
-    jokelist = document.createElement('ul');
-    app.appendChild(jokelist);
+
+    renderData(app);
+
 
     setInterval(function () {
-        renderData();
-    }, 2000);
+        console.log("rendering data");
+        renderData(app);
+    }, 1000);
 
     setInterval(async function () {
-        console.log(data)
         const jokeToUpdate = getRandomInt(1, 5);
         const theNewJoke = await fetchNewJoke();
         
         data = data.map( thejoke => 
             thejoke.id == jokeToUpdate ? {id: thejoke.id, joke: theNewJoke } : thejoke
         );
-    }, 5000);
+    }, 10000);
 }
 
 function getRandomInt(min, max) {
@@ -41,20 +42,25 @@ async function fetchNewJoke() {
     return joke.value;
 }
 
-function renderData() {
-    jokelist.innerHTML = '';
+function renderData(app) {
+    app.innerHTML = '';
     data.forEach(element => {
-        const jokeItem = document.createElement('li')
+        const container = document.createElement('div');
 
+        const idcontainer = document.createElement('div');
         const id = document.createElement('p');
         id.textContent = element.id;
+        idcontainer.appendChild(id)
 
+        const jokecontainer = document.createElement('div');
         const joke = document.createElement('p');
         joke.textContent = element.joke;
+        jokecontainer.appendChild(joke)
 
-        jokelist.appendChild(id)
-        jokelist.appendChild(joke)
 
-        jokelist.appendChild(jokeItem)
+        container.appendChild(idcontainer)
+        container.appendChild(jokecontainer)
+
+        app.appendChild(container)
     });
 }
