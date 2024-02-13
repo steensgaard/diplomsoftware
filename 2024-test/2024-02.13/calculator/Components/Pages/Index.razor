@@ -1,0 +1,73 @@
+@page "/"
+@rendermode InteractiveServer
+@inject ICalculator calculator
+<PageTitle>The Calculator</PageTitle>
+
+
+<span>@OprendLeft</span>
+<span>@Operation</span>
+<span>@OprendRight</span>
+<br />
+<button @onclick ='()=>AddOprend("1")'>1</button>
+<button @onclick ='()=>AddOprend("2")'>2</button>
+<button @onclick ='()=>AddOprend("3")'>3</button>
+<button @onclick ='()=>AddOprend("4")'>4</button>
+<button @onclick ='()=>AddOprend("5")'>5</button>
+<button @onclick ='()=>AddOprend("6")'>6</button>
+<button @onclick ='()=>AddOprend("7")'>7</button>
+<button @onclick ='()=>AddOprend("8")'>8</button>
+<button @onclick ='()=>AddOprend("9")'>9</button>
+<button @onclick ='()=>AddOprend("0")'>0</button>
+<button @onclick ='()=>AddOperation("+")'>+</button>
+<button @onclick ='()=>AddOperation("-")'>-</button>
+<button @onclick ='()=>AddOperation("*")'>*</button>
+<button @onclick ='()=>AddOperation("/")'>/</button>
+<button @onclick ='()=>CalculateResult()'>=</button>
+<button @onclick ='()=>Clear()'>c</button>
+
+@code {
+    private string OprendLeft = "";
+    private string Operation = "";
+    private string OprendRight = "";
+
+    void Clear(){
+        OprendLeft = "0";
+        Operation = "";
+        OprendRight = "";
+    }
+
+    void AddOperation(string operation){
+        Operation = operation;
+    }
+
+    void AddOprend(string s){
+        if(String.IsNullOrEmpty(Operation)){
+            OprendLeft = prepForDispay(OprendLeft + s);
+        }
+        else {
+            OprendRight = prepForDispay(OprendRight + s);
+        }
+    }
+
+    void CalculateResult(){
+        double left = Convert.ToDouble(OprendLeft);
+        double right = Convert.ToDouble(OprendRight);
+        double result = calculator.calculate(left, Operation, right);
+        Clear();
+        OprendLeft = result.ToString();
+    }
+
+    string prepForDispay(string oprend){
+        string result = oprend;
+        bool goodToGo = false; 
+        while(!goodToGo) {
+            bool allDone = true;
+            if(result.Length > 1 && result.StartsWith("0")){
+                result = result.Substring(1);
+                allDone = false;
+            }
+            goodToGo = allDone;
+        }
+        return result;
+    }
+}
