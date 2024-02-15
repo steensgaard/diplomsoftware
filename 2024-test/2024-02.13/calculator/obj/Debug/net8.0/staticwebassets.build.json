@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mv5it9A0lJZvX1GoccEu5E8KsetnAGwVcVU17neFOEk=",
+  "Hash": "9uzzxFO3YLNJOTf+z5L+ne9W9Q/0/KDAYlpUIPB+7p0=",
   "Source": "calculator",
   "BasePath": "_content/calculator",
   "Mode": "Default",
@@ -16,44 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "/app/obj/Debug/net8.0/scopedcss/bundle/calculator.styles.css",
-      "SourceId": "calculator",
-      "SourceType": "Computed",
-      "ContentRoot": "/app/obj/Debug/net8.0/scopedcss/bundle/",
-      "BasePath": "_content/calculator",
-      "RelativePath": "calculator.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/app/obj/Debug/net8.0/scopedcss/bundle/calculator.styles.css"
-    },
-    {
-      "Identity": "/app/obj/Debug/net8.0/scopedcss/projectbundle/calculator.bundle.scp.css",
-      "SourceId": "calculator",
-      "SourceType": "Computed",
-      "ContentRoot": "/app/obj/Debug/net8.0/scopedcss/projectbundle/",
-      "BasePath": "_content/calculator",
-      "RelativePath": "calculator.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/app/obj/Debug/net8.0/scopedcss/projectbundle/calculator.bundle.scp.css"
-    },
     {
       "Identity": "/app/wwwroot/app.css",
       "SourceId": "calculator",

@@ -77,9 +77,7 @@
 /app/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.calculator.props
 /app/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.calculator.props
 /app/obj/Debug/net8.0/staticwebassets.pack.json
-/app/obj/Debug/net8.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
 /app/obj/Debug/net8.0/scopedcss/bundle/calculator.styles.css
-/app/obj/Debug/net8.0/scopedcss/projectbundle/calculator.bundle.scp.css
 /app/obj/Debug/net8.0/calculator.dll
 /app/obj/Debug/net8.0/refint/calculator.dll
 /app/obj/Debug/net8.0/calculator.pdb

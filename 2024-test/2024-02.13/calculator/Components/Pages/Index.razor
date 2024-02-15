@@ -1,29 +1,46 @@
 @page "/"
 @rendermode InteractiveServer
 @inject ICalculator calculator
-<PageTitle>The Calculator</PageTitle>
 
-
-<span>@OprendLeft</span>
-<span>@Operation</span>
-<span>@OprendRight</span>
-<br />
-<button @onclick ='()=>AddOprend("1")'>1</button>
-<button @onclick ='()=>AddOprend("2")'>2</button>
-<button @onclick ='()=>AddOprend("3")'>3</button>
-<button @onclick ='()=>AddOprend("4")'>4</button>
-<button @onclick ='()=>AddOprend("5")'>5</button>
-<button @onclick ='()=>AddOprend("6")'>6</button>
-<button @onclick ='()=>AddOprend("7")'>7</button>
-<button @onclick ='()=>AddOprend("8")'>8</button>
-<button @onclick ='()=>AddOprend("9")'>9</button>
-<button @onclick ='()=>AddOprend("0")'>0</button>
-<button @onclick ='()=>AddOperation("+")'>+</button>
-<button @onclick ='()=>AddOperation("-")'>-</button>
-<button @onclick ='()=>AddOperation("*")'>*</button>
-<button @onclick ='()=>AddOperation("/")'>/</button>
-<button @onclick ='()=>CalculateResult()'>=</button>
-<button @onclick ='()=>Clear()'>c</button>
+<div class="index">
+    <div class="calcdisplay">
+        <span class="whitetext">@OprendLeft</span>
+        <span class="whitetext">@Operation</span>
+        <span class="whitetext">@OprendRight</span>
+    </div>
+    <div>
+        <div class="numpad">
+            <div>
+                <button class="whitebg blacktext" @onclick ='()=>AddOprend("1")'>1</button>
+                <button class="whitebg blacktext" @onclick ='()=>AddOprend("2")'>2</button>
+                <button class="whitebg blacktext" @onclick ='()=>AddOprend("3")'>3</button>
+            </div>
+            <div>
+                <button class="whitebg blacktext" @onclick ='()=>AddOprend("4")'>4</button>
+                <button class="whitebg blacktext" @onclick ='()=>AddOprend("5")'>5</button>
+                <button class="whitebg blacktext" @onclick ='()=>AddOprend("6")'>6</button>
+            </div>
+            <div>
+                <button class="whitebg blacktext" @onclick ='()=>AddOprend("7")'>7</button>
+                <button class="whitebg blacktext" @onclick ='()=>AddOprend("8")'>8</button>
+                <button class="whitebg blacktext"  @onclick ='()=>AddOprend("9")'>9</button>
+            </div>
+            <div>
+                <button class="whitebg blacktext" @onclick ='()=>AddOprend("0")'>0</button>
+            </div>
+        </div>
+        <div class="operations">
+            <button class="orangebg whitetext" @onclick ='()=>AddOperation("+")'>+</button>
+            <button class="orangebg whitetext" @onclick ='()=>AddOperation("-")'>-</button>
+            <button class="orangebg whitetext" @onclick ='()=>AddOperation("*")'>*</button>
+            <button class="orangebg whitetext" @onclick ='()=>AddOperation("/")'>/</button>
+        </div>
+    </div>
+    <div>
+        <button class="graybg whitetext" @onclick ='()=>Clear()'>c</button>
+        <button class="equals orangebg whitetext" @onclick ='()=>CalculateResult()'>=</button>
+    </div>
+</div>
 
 @code {
     private string OprendLeft = "";
@@ -66,8 +83,13 @@
                 result = result.Substring(1);
                 allDone = false;
             }
+            if(result.StartsWith(".")){
+                result = "0" + result;
+                allDone = true;
+            }
             goodToGo = allDone;
         }
+
         return result;
     }
 }
