@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = BlazorDemo.Tests
+build_property.ProjectDir = /home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo.Tests/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
