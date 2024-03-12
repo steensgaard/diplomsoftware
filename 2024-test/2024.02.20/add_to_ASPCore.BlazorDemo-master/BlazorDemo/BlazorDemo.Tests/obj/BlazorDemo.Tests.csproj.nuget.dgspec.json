@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo.Tests/BlazorDemo.Tests.csproj": {}
+    "/app/BlazorDemo.Tests/BlazorDemo.Tests.csproj": {}
   },
   "projects": {
-    "/home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo.Tests/BlazorDemo.Tests.csproj": {
+    "/app/BlazorDemo.Tests/BlazorDemo.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo.Tests/BlazorDemo.Tests.csproj",
+        "projectUniqueName": "/app/BlazorDemo.Tests/BlazorDemo.Tests.csproj",
         "projectName": "BlazorDemo.Tests",
-        "projectPath": "/home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo.Tests/BlazorDemo.Tests.csproj",
-        "packagesPath": "/home/runner/.nuget/packages/",
-        "outputPath": "/home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo.Tests/obj/",
+        "projectPath": "/app/BlazorDemo.Tests/BlazorDemo.Tests.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/app/BlazorDemo.Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/runner/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -24,10 +24,9 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "/home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo/BlazorDemo.csproj": {
-                "projectPath": "/home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo/BlazorDemo.csproj"
+              "/app/BlazorDemo/BlazorDemo.csproj": {
+                "projectPath": "/app/BlazorDemo/BlazorDemo.csproj"
               }
             }
           }
@@ -40,7 +39,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "JustMock": {
               "target": "Package",
@@ -73,41 +71,30 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/runner/.dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.426/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo/BlazorDemo.csproj": {
+    "/app/BlazorDemo/BlazorDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo/BlazorDemo.csproj",
+        "projectUniqueName": "/app/BlazorDemo/BlazorDemo.csproj",
         "projectName": "BlazorDemo",
-        "projectPath": "/home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo/BlazorDemo.csproj",
-        "packagesPath": "/home/runner/.nuget/packages/",
-        "outputPath": "/home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo/obj/",
+        "projectPath": "/app/BlazorDemo/BlazorDemo.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/app/BlazorDemo/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/runner/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -117,7 +104,6 @@
         },
         "frameworks": {
           "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -129,7 +115,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Microsoft.AspNetCore.Blazor": {
               "target": "Package",
@@ -156,8 +141,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -166,7 +150,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/runner/.dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.426/RuntimeIdentifierGraph.json"
         }
       }
     }

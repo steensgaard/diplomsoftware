@@ -93,14 +93,10 @@
           "System.Security.Permissions": "4.5.0"
         },
         "compile": {
-          "lib/netcoreapp2.0/Telerik.JustMock.dll": {
-            "related": ".xml"
-          }
+          "lib/netcoreapp2.0/Telerik.JustMock.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.0/Telerik.JustMock.dll": {
-            "related": ".xml"
-          }
+          "lib/netcoreapp2.0/Telerik.JustMock.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authorization/3.1.32": {
@@ -655,18 +651,14 @@
           "lib/netcoreapp2.1/Microsoft.TestPlatform.CrossPlatEngine.dll": {},
           "lib/netcoreapp2.1/Microsoft.TestPlatform.Utilities.dll": {},
           "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.Common.dll": {},
-          "lib/netcoreapp2.1/testhost.dll": {
-            "related": ".deps.json"
-          }
+          "lib/netcoreapp2.1/testhost.dll": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/Microsoft.TestPlatform.CommunicationUtilities.dll": {},
           "lib/netcoreapp2.1/Microsoft.TestPlatform.CrossPlatEngine.dll": {},
           "lib/netcoreapp2.1/Microsoft.TestPlatform.Utilities.dll": {},
           "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.Common.dll": {},
-          "lib/netcoreapp2.1/testhost.dll": {
-            "related": ".deps.json"
-          }
+          "lib/netcoreapp2.1/testhost.dll": {}
         },
         "resource": {
           "lib/netcoreapp2.1/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
@@ -797,14 +789,10 @@
           "Microsoft.JSInterop": "3.1.0"
         },
         "compile": {
-          "lib/netstandard2.1/Mono.WebAssembly.Interop.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Mono.WebAssembly.Interop.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Mono.WebAssembly.Interop.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Mono.WebAssembly.Interop.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -1214,9 +1202,7 @@
           "System.Security.Principal.Windows": "4.5.0"
         },
         "compile": {
-          "ref/netstandard2.0/System.Security.AccessControl.dll": {
-            "related": ".xml"
-          }
+          "ref/netstandard2.0/System.Security.AccessControl.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.AccessControl.dll": {}
@@ -1234,9 +1220,7 @@
           "System.Security.AccessControl": "4.5.0"
         },
         "compile": {
-          "ref/netstandard2.0/System.Security.Permissions.dll": {
-            "related": ".xml"
-          }
+          "ref/netstandard2.0/System.Security.Permissions.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.Permissions.dll": {}
@@ -1248,9 +1232,7 @@
           "Microsoft.NETCore.Platforms": "2.0.0"
         },
         "compile": {
-          "ref/netstandard2.0/System.Security.Principal.Windows.dll": {
-            "related": ".xml"
-          }
+          "ref/netstandard2.0/System.Security.Principal.Windows.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
@@ -1313,14 +1295,10 @@
       "System.Text.Json/4.7.0": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp3.0/System.Text.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.0/System.Text.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
       },
       "System.Text.RegularExpressions/4.1.0": {
@@ -4025,19 +4003,19 @@
     ]
   },
   "packageFolders": {
-    "/home/runner/.nuget/packages/": {}
+    "/root/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo.Tests/BlazorDemo.Tests.csproj",
+      "projectUniqueName": "/app/BlazorDemo.Tests/BlazorDemo.Tests.csproj",
       "projectName": "BlazorDemo.Tests",
-      "projectPath": "/home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo.Tests/BlazorDemo.Tests.csproj",
-      "packagesPath": "/home/runner/.nuget/packages/",
-      "outputPath": "/home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo.Tests/obj/",
+      "projectPath": "/app/BlazorDemo.Tests/BlazorDemo.Tests.csproj",
+      "packagesPath": "/root/.nuget/packages/",
+      "outputPath": "/app/BlazorDemo.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/runner/.nuget/NuGet/NuGet.Config"
+        "/root/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -4047,10 +4025,9 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "/home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo/BlazorDemo.csproj": {
-              "projectPath": "/home/runner/code/repo/diplomsoftware/2024-test/2024.02.20/ASPCore.BlazorDemo-master/BlazorDemo/BlazorDemo/BlazorDemo.csproj"
+            "/app/BlazorDemo/BlazorDemo.csproj": {
+              "projectPath": "/app/BlazorDemo/BlazorDemo.csproj"
             }
           }
         }
@@ -4063,7 +4040,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "JustMock": {
             "target": "Package",
@@ -4096,27 +4072,16 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.10, 3.1.10]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/runner/.dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.426/RuntimeIdentifierGraph.json"
       }
     }
   }
