@@ -13,7 +13,7 @@ namespace BlazorDemo.Tests
     public class CalculatorTestDataMembers : TestContext
     {
         [
-            Theory, MemberData("GetMemberData")
+            Theory, MemberData(nameof(GetMemberData))
         ]
         public void CalculatorPage_AddNumbers(List<string> inputs)
         {

@@ -278,3 +278,7 @@
 /app/BlazorDemo.Tests/obj/Debug/netcoreapp3.1/BlazorDemo.Tests.dll
 /app/BlazorDemo.Tests/obj/Debug/netcoreapp3.1/BlazorDemo.Tests.pdb
 /app/BlazorDemo.Tests/obj/Debug/netcoreapp3.1/BlazorDemo.Tests.genruntimeconfig.cache
+/app/BlazorDemo.Tests/bin/Debug/netcoreapp3.1/Castle.Core.dll
+/app/BlazorDemo.Tests/bin/Debug/netcoreapp3.1/Moq.dll
+/app/BlazorDemo.Tests/bin/Debug/netcoreapp3.1/System.Diagnostics.EventLog.dll
+/app/BlazorDemo.Tests/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Diagnostics.EventLog.dll
